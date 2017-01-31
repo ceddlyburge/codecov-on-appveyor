@@ -1,0 +1,26 @@
+bin
+obj
+*.suo
+*.csproj.user
+*.userprefs
+/lib/*.dll
+_ReSharper*/*
+.vs
+Backup*/*
+
+# User-specific folders
+*.sln.ide/
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# If using the old MSBuild-Integrated Package Restore, uncomment this:
+!**/packages/repositories.config
+
+# Switch file for debug versioning of VSIX
+__debug.versioning
+/CodeConverterWebApp/Properties/PublishProfiles/roslyncodeconverter - Web Deploy.pubxml.user
+/CodeConverterWebApp/Properties/PublishProfiles/roslyncodeconverter - Web Deploy.pubxml
