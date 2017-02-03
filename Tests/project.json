@@ -1,16 +1,17 @@
 ﻿{
-  "supports": {
-    "net46.app": {},
-    "uwp.10.0.app": {}
-  },
-  "dependencies": {
-    "Microsoft.NETCore": "5.0.0",
-    "Microsoft.NETCore.Portable.Compatibility": "1.0.0",
-    "xunit": "2.1.0"
-  },
-  "frameworks": {
-    "dotnet": {
-      "imports": "portable-net452+win81"
+    "version": "1.0.0-*",
+    "testRunner": "xunit",
+    "dependencies": {
+        "xunit": "2.2.0-beta2-build3300",
+        "dotnet-test-xunit": "2.2.0-preview2-build1029"
+    },
+    "frameworks": {
+        "netcoreapp1.0": {
+            "dependencies": {
+                "Microsoft.NETCore.App": {
+                    "version": "1.0.0"
+                }
+            }
+        }
     }
-  }
 }
