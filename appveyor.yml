@@ -3,6 +3,7 @@ environment:
     secure: 1nfb9SLjo61snT5F5LIQp7IROP99WveRGt5IzVUPRaefxRHEjQkV8faa+mB7MitN
 before_build:
  - nuget restore
+ - appveyor-retry dotnet restore -v Minimal
 build_script:
  - echo %xunit20%
  - msbuild /verbosity:quiet "codecov-on-appveyor.sln"
