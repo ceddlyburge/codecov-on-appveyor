@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemUnderTest", "SystemUnderTest\SystemUnderTest.csproj", "{87C1B1B5-41FA-462C-AE23-58E5A684485B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemUnderTest", "SystemUnderTest.csproj", "{87C1B1B5-41FA-462C-AE23-58E5A684485B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{2688DD24-B0AB-4D36-9560-25FC9F0A53BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "..\Tests\Tests.csproj", "{2688DD24-B0AB-4D36-9560-25FC9F0A53BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
