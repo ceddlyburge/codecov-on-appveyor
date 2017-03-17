@@ -12,14 +12,14 @@ Obviously, it being a post about Code Coverge, there is a badge to display the r
 
 [![Code Coverage](https://codecov.io/gh/ceddlyburge/codecov-on-appveyor/coverage.svg)](https://codecov.io/gh/ceddlyburge/codecov-on-appveyor)
 
-Sunburst graphic (would be more interesting with more code / tests)
+Sunburst code coverage graphic (would be more interesting with more code / tests)
 
 [![Code Coverage Sunburst](https://codecov.io/gh/ceddlyburge/codecov-on-appveyor/branch/master/graphs/sunburst.svg)](https://codecov.io/gh/ceddlyburge/codecov-on-appveyor/branch/master/graphs/sunburst.svg)
 
-Icicles graphic (would also be more interesting with more code / tests)
+Icicles code coverage graphic (would also be more interesting with more code / tests)
 
 [![Code Coverage Icicles](https://codecov.io/gh/ceddlyburge/codecov-on-appveyor/branch/master/graphs/icicle.svg)](https://codecov.io/gh/ceddlyburge/codecov-on-appveyor/branch/master/graphs/icicle.svg)
 
-Grid graphic (and again, would also be more interesting with more code / tests)
+Grid code coverage graphic (and again, would also be more interesting with more code / tests)
 
 [![Code Coverage Grid](https://codecov.io/gh/ceddlyburge/codecov-on-appveyor/branch/master/graphs/tree.svg)](https://codecov.io/gh/ceddlyburge/codecov-on-appveyor/branch/master/graphs/tree.svg)
