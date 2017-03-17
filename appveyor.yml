@@ -1,10 +1,6 @@
-environment:
-  github_auth_token:
-    secure: 1nfb9SLjo61snT5F5LIQp7IROP99WveRGt5IzVUPRaefxRHEjQkV8faa+mB7MitN
 before_build:
  - nuget restore
- - appveyor-retry dotnet restore -v Minimal
 build_script:
  - msbuild /verbosity:quiet "codecov-on-appveyor.sln"
 after_test:
-- .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:"Tests\bin\Debug\tests.dll -noshadow" -output:".\coverage.xml" -filter:"+[Tests*]*" -output:.\CanoePoloLeagueOrganiser_coverage.xml
+- .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:"Tests\bin\Debug\tests.dll -noshadow" -output:".\coverage.xml" -filter:"+[Tests*]*" -output:.\coverage.xml
