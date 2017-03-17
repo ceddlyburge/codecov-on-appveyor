@@ -5,5 +5,6 @@ before_build:
  - nuget restore
  - appveyor-retry dotnet restore -v Minimal
 build_script:
- - echo %xunit20%
  - msbuild /verbosity:quiet "codecov-on-appveyor.sln"
+after_test:
+- .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:"Tests\bin\Debug\tests.dll -noshadow" -output:".\coverage.xml" -filter:"+[Tests*]*" -output:.\CanoePoloLeagueOrganiser_coverage.xml
