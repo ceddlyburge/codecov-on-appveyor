@@ -7,4 +7,4 @@ test_script:
 after_test:
 - "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
 - pip install codecov
-- codecov -f "CanoePoloLeagueOrganiser_coverage.xml"
+- codecov -f "coverage.xml"
