@@ -3,7 +3,7 @@ before_build:
 build_script:
  - msbuild /verbosity:quiet "codecov-on-appveyor.sln"
 test_script:
- - .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:"Tests\bin\Debug\tests.dll -noshadow" -output:"coverage.xml" -filter:"+[Tests*]*"
+ - .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:"packages\xunit.runner.console.2.2.0\tools\xunit.console.x86.exe" -targetargs:"Tests\bin\Debug\tests.dll -noshadow" -output:".\coverage.xml" -filter:"+[SystemUnderTest*]* -[Tests*]*"
 after_test:
 - "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
 - pip install codecov
