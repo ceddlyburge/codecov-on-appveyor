@@ -1,14 +1,14 @@
 # Integrating CodeCov and ApVeyor 
 
-Companion repository to the blog post "CodeCov Test Coverage Integration" on the AppVeyor website.
+Companion repository to the blog post [CodeCov Test Coverage Integration](https://www.appveyor.com/blog/2017/03/17/codecov/) on the AppVeyor website.
 
 The post is written from the point of view of someone (me) who is already proficient in C# and unit testing, but was new to AppVeyor and integrating CodeCov with GitHub.
 
-It contains from scratch steps to run CodeCov test coverage on a sample C# project using [XUnit](https://xunit.github.io/). 
+It contains from scratch steps to upload test coverage to [CodeCov](http://codecov.io/) for a sample C# project using [XUnit](https://xunit.github.io/) and [OpenCover](https://github.com/OpenCover/opencover). 
 
 This is the repo that I created to test the blog post, which you can use for clues if you have trouble following the instructions in the post.
 
-Obviously, it being a post about Code Coverge, there is a badge to display the results :)
+Obviously, it being a post about Code Coverage, there is a badge to display the results :)
 
 [![Code Coverage](https://codecov.io/gh/ceddlyburge/codecov-on-appveyor/coverage.svg)](https://codecov.io/gh/ceddlyburge/codecov-on-appveyor)
 
