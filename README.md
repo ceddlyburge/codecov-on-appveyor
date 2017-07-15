@@ -1,4 +1,4 @@
-# Integrating CodeCov and ApVeyor 
+# Integrating CodeCov and AppVeyor 
 
 Companion repository to the blog post [CodeCov Test Coverage Integration](https://www.appveyor.com/blog/2017/03/17/codecov/) on the AppVeyor website.
 
