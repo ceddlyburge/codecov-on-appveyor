@@ -11,5 +11,10 @@ namespace SystemUnderTest
         {
             return $"{lastName}, {firstName}";
         }
+
+        public string FullNameScreamingSnakeCase(string firstName, string lastName)
+        {
+            return $"{lastName.ToUpperInvariant()}_{firstName.ToUpperInvariant()}";
+        }
     }
 }
