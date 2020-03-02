@@ -9,6 +9,8 @@ after_test:
   - ps: |
       Invoke-WebRequest -Uri 'https://codecov.io/bash' -OutFile codecov.sh
       cat coverage.xml
+      $env:APPVEYOR="true"
+      $env:CI="true"
       bash codecov.sh -f "coverage.xml"
 # use codecov python package. Requires python to be available, which it is on AppVeyor machine image, and then we have to install the codecov package
 #after_test:
