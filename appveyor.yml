@@ -10,7 +10,7 @@ after_test:
       $env:PATH = 'C:\msys64\usr\bin;' + $env:PATH
       Invoke-WebRequest -Uri 'https://codecov.io/bash' -OutFile codecov.sh
       bash codecov.sh -f "coverage.xml"
-# use codecov python package. Requires python to be available, which it is on AppVeyor machine image, and then we have to install the codecov package
+# another option is to use the codecov python package. Requires python to be available, which it is on AppVeyor machine image, and then we have to install the codecov package
 #after_test:
 #- "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
 #- pip install codecov
