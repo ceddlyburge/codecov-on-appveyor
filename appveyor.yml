@@ -7,7 +7,6 @@ test_script:
 # use codecov bash script. Requires powershell and bash to be installed, which both are on the AppVeyor machine image
 after_test:
   - ps: |
-      $env:PATH = 'C:\msys64\usr\bin;' + $env:PATH
       Invoke-WebRequest -Uri 'https://codecov.io/bash' -OutFile codecov.sh
       cat coverage.xml
       bash codecov.sh -f "coverage.xml"
