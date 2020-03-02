@@ -8,7 +8,6 @@ test_script:
 after_test:
   - ps: |
       Invoke-WebRequest -Uri 'https://codecov.io/bash' -OutFile codecov.sh
-      cat coverage.xml
       $env:APPVEYOR="true"
       $env:CI="true"
       bash codecov.sh -f "coverage.xml"
